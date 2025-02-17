@@ -1,3 +1,3 @@
-function goToUrl(url) {
+ffunction goToUrl(url) {
     window.location.href = url;
 }
