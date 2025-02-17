@@ -1,0 +1,107 @@
+/* Genel sayfa düzeni */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dinamik renkli arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Buton stili */
+.random-btn {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animasyonları */
+.random-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Butonların arka plan renk geçişi */
+.instagram-btn {
+    background-color: #e1306c; /* Instagram rengi */
+    animation: colorChangeInstagram 3s infinite alternate;
+}
+
+.facebook-btn {
+    background-color: #3b5998; /* Facebook rengi */
+    animation: colorChangeFacebook 3s infinite alternate;
+}
+
+.twitter-btn {
+    background-color: #1DA1F2; /* Twitter rengi */
+    animation: colorChangeTwitter 3s infinite alternate;
+}
+
+.youtube-btn {
+    background-color: #FF0000; /* YouTube rengi */
+    animation: colorChangeYouTube 3s infinite alternate;
+}
+
+.linkedin-btn {
+    background-color: #0077B5; /* LinkedIn rengi */
+    animation: colorChangeLinkedIn 3s infinite alternate;
+}
+
+/* Renk geçiş animasyonları */
+@keyframes colorChangeInstagram {
+    0% { background-color: #4CAF50; } /* Yeşil */
+    33% { background-color: #FF4081; } /* Pembe */
+    66% { background-color: #FFEB3B; } /* Sarı */
+    100% { background-color: #4CAF50; } /* Yeşil */
+}
+
+@keyframes colorChangeFacebook {
+    0% { background-color: #4CAF50; } /* Yeşil */
+    33% { background-color: #FF4081; } /* Pembe */
+    66% { background-color: #FFEB3B; } /* Sarı */
+    100% { background-color: #4CAF50; } /* Yeşil */
+}
+
+@keyframes colorChangeTwitter {
+    0% { background-color: #4CAF50; } /* Yeşil */
+    33% { background-color: #FF4081; } /* Pembe */
+    66% { background-color: #FFEB3B; } /* Sarı */
+    100% { background-color: #4CAF50; } /* Yeşil */
+}
+
+@keyframes colorChangeYouTube {
+    0% { background-color: #4CAF50; } /* Yeşil */
+    33% { background-color: #FF4081; } /* Pembe */
+    66% { background-color: #FFEB3B; } /* Sarı */
+    100% { background-color: #4CAF50; } /* Yeşil */
+}
+
+@keyframes colorChangeLinkedIn {
+    0% { background-color: #4CAF50; } /* Yeşil */
+    33% { background-color: #FF4081; } /* Pembe */
+    66% { background-color: #FFEB3B; } /* Sarı */
+    100% { background-color: #4CAF50; } /* Yeşil */
+}
+
+/* İkon stili */
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Sayfanın merkezi yerleştirilmesi */
+.container {
+    text-align: center;
+}
